@@ -48,7 +48,7 @@ export function getUserHandlers(_userRepository: Repository<User>) {
                     return res.status(201).send(User);
                 },(e)=>{
                     console.log(`unable to save the user ${e}`);
-                    return res.send(e);
+                    return res.status(400).send(e);
                 });
             }            
 
