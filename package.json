@@ -1,0 +1,35 @@
+{
+  "name": "reddit_yosephbuitrago_2016292",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/backend/index.ts",
+    "test": "nyc --clean --all --require ts-node/register --require reflect-metadata/Reflect --extension .ts -- mocha --timeout 5000 **/*.test.ts"
+  },
+  "author": "Yoseph Buitrago 2016292",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "4.1.2",
+    "@types/expect": "^1.20.3",
+    "@types/express": "4.11.1",
+    "@types/jsonwebtoken": "7.2.6",
+    "@types/mocha": "5.1.0",
+    "@types/node": "9.6.5",
+    "@types/supertest": "2.0.4",
+    "chai": "4.1.2",
+    "expect": "^22.4.3",
+    "mocha": "5.1.1",
+    "nodemon": "^1.17.4",
+    "supertest": "3.0.0",
+    "ts-node": "6.0.0",
+    "typescript": "2.8.1"
+  },
+  "dependencies": {
+    "express": "4.16.3",
+    "jsonwebtoken": "8.2.1",
+    "pg": "7.4.1",
+    "reflect-metadata": "0.1.12",
+    "typeorm": "0.1.21"
+  }
+}
